@@ -203,7 +203,7 @@ header .menu-line {
     justify-content: center;
     align-items: center;
     background-image: url(../images/project.png);
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: cover;
     background-repeat: no-repeat;
     height: 100vh;
