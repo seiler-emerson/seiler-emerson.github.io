@@ -507,11 +507,8 @@ footer a {
         text-align: center;
         height: 100vh;
     }
-    .container-four .right-side-contact .text{
-        background-color: var(--collor3);
-        opacity: 0.8;
-        align-items:center;
-        padding: 50px;
+    .container-four .text {
+        padding: 0;
     }
     .container-four .right-side-contact {
         display: none;
