@@ -1,0 +1,595 @@
+    /* ================================================ */
+    /* ================ CONFIG GLOBAL ================= */
+    /* ================================================ */
+
+:root {
+    --collor0: #FFFFFF;
+    --collor1: #000000;
+    --collor2: #D9043D;
+    --collor3: #010626;
+    --collor4: #021859;
+    --collor5: #484659; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /* ================================================ */
+    /* ==================== HEADER ==================== */
+    /* ================================================ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--collor3);
+    padding: 20px;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+header .logo a{
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--collor2);
+}
+header .logo a:hover{
+    opacity: 0.8;
+    text-shadow: 2px 2px 4px var(--collor5);
+}
+.header .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .menu-complete {
+    display: flex;
+    border-radius: 10px;
+    opacity: 0.8;
+    gap: 20px;
+}
+header .menu-complete a {
+    color: var(--collor2);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+header .menu-complete a:hover {
+    opacity: 0.8;
+    text-shadow: 2px 2px 4px var(--collor5);
+}
+
+    /* ================================================ */
+    /* ================= MENU MOBILE ================== */
+    /* ================================================ */
+
+header .menu-compact {
+    display: none;
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .menu-line {
+    display: none;
+    height: 3px;
+    background-color: var(--collor2);
+}
+
+
+    /* ================================================ */
+    /* ===================== HOME ===================== */
+    /* ================================================ */
+
+.container-one {
+    display: flex;
+    height: 100vh;
+    
+}
+.container-one .left-side-home {
+    flex: 1;
+    max-width: 50vw;
+    background-color: var(--collor3);
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+    justify-content: end;
+}
+.container-one .right-side-home {
+    flex: 1;
+    max-width: 50%;
+    background-image: url('../images/initial_right_side.png');
+    background-size: cover;
+    background-position: center;
+}
+.container-one .info {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+.container-one .info .profession {
+    color: var(--collor2);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+.container-one .info .name {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+.container-one .info .name h1{
+    color: var(--collor0);
+    text-align: right;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 10px;
+}
+.container-one .info .name h1:last-child{
+    margin: -10px 0 20px 0;
+}
+.container-one .info .buttons a {
+    display: inline-block;
+    background-color: var(--collor2);
+    color: var(--collor1);
+    padding: 20px 30px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px var(--collor3);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.container-one .info .buttons a.light {
+    color: var(--collor4);
+    background-color: var(--collor0);
+}
+
+.container-one .info .buttons a:hover {
+    opacity: 0.8;
+}
+
+    /* ================================================ */
+    /* =================== ABOUT ME =================== */
+    /* ================================================ */
+
+.container-two {
+    display: flex;
+    height: 100vh;
+}
+.container-two .right-side-about {
+    flex: 1;
+    max-width: 50%;
+    background-color: var(--collor3);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: center;
+}
+.container-two .left-side-about {
+    flex: 1;
+    max-width: 50%;
+    background-image: url('../images/about-left-side.png');
+    background-size: center;
+    background-position: center;
+}
+
+.container-two .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    padding: 100px;
+}
+.container-two .about-me .title {
+    color: var(--collor2);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.container-two .about-me .text p {
+    color: var(--collor0);
+    font-size: 22px;
+    /* font-weight: bold; */
+    text-align: justify;
+}
+
+    /* ================================================ */
+    /* =================== PROJECTS =================== */
+    /* ================================================ */
+
+.container-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/project.png);
+    background-size: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container-three .title {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--collor0);
+    margin-bottom: 20px;
+}
+
+.container-three .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* width: 1240px; */
+    height: auto;
+}
+
+.container-three .projects .box {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    border-radius: 10px;
+    margin: 0 5px 0 5px;
+    background-color: var(--collor1);
+}
+.container-three .projects .box h2 {
+    font-size: 30px;
+    color: var(--collor0);
+    margin-bottom: 10px;
+}
+
+.container-three .projects .box .img {
+    width: 310px;
+    height: 310px;
+    background-color: var(--collor2);
+
+}
+
+.container-three .projects .box p {
+    color: var(--collor0);
+    width: 310px;
+    height: 75px;
+    margin-top: 10px;
+}
+
+.container-three .projects .box a {
+    background-color: var(--collor2);
+    color: var(--collor1);
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.container-three a:hover {
+    opacity: 0.8;
+}
+.container-three .projects .box .img1 {
+    background-image: url(../images/projects/hiremeFlix.png);
+    background-size: cover;
+}
+.container-three .projects .box .img2 {
+    background-image: url(../images/projects/adsManager.png);
+    background-size: cover;
+}
+.container-three .projects .box .img3 {
+    background-image: url(../images/projects/pomodoro.png);
+    background-size: cover;
+}
+
+.container-three a {
+    display: inline-block;
+    background-color: var(--collor0);
+    color: var(--collor4);
+    padding: 20px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px var(--collor3);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+    /* ================================================ */
+    /* ==================== CONTACT =================== */
+    /* ================================================ */
+
+.container-four {
+    display: flex;
+    height: 100vh;
+}
+.container-four .left-side-contact {
+    flex: 1;
+    max-width: 50%;
+    background-color: var(--collor3);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: end;
+}
+.container-four .right-side-contact {
+    flex: 1;
+    max-width: 50%;
+    background-image: url('../images/contact-right-side.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container-four .text {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    padding-right: 60px;
+}
+.container-four .text .phrase {
+    color: var(--collor2);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+.container-four .text .title {
+    color: var(--collor0);
+    text-align: right;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 300px;
+    line-height: 0.9;
+}
+
+.container-four .text .buttons {
+    width: 290px;
+    display: inline-block;
+    text-align: start;
+    margin-top: -70px;
+}
+
+.container-four .text .buttons a img {
+    box-shadow: 0px 0px 10px var(--collor3);
+    margin-right: 10px;
+}
+
+.container-four .text .buttons a img:hover {
+    opacity: 0.8;
+}
+
+    /* ================================================ */
+    /* ==================== FOOTER ==================== */
+    /* ================================================ */
+
+footer {
+    background-color: var(--collor3);
+    margin: auto;
+    padding: 20px;
+    color: var(--collor2);
+    font-size: 13px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: var(--collor2);
+}
+
+
+
+    /* ================================================ */
+    /* ================ RESPONSIVIDADE ================ */
+    /* ================================================ */
+
+@media (max-width: 1250px) {
+
+    /* ================================================ */
+    /* =================== PROJECTS =================== */
+    /* ================================================ */
+    
+    .container-three {
+        height: auto;
+        padding: 30px;
+        background-image: url(../images/project_mobile.png);
+        background-size: 100% 100%;
+    }
+
+    .container-three .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-three .projects .box {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 920px) {
+
+    /* ================================================ */
+    /* ===================== HOME ===================== */
+    /* ================================================ */
+
+    .container-one {
+        flex-direction: column;
+    }
+    .container-one .left-side-home {
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+        max-width: 100%;
+    }
+    .container-one .left-side-home .info {
+        align-items:center;
+        margin-top: 50px;
+    }
+    .container-one .right-side-home {
+        max-width: 100%;
+    }
+    .container-one .info .name {
+        flex-direction: row;
+        
+    }
+    .container-one .info .name h1 {
+        font-size: 40px;
+    }
+    .container-one .info .name h1:last-child {
+        margin: 0;
+    }
+
+    /* ================================================ */
+    /* =================== ABOUT ME =================== */
+    /* ================================================ */
+
+    .container-two {
+        flex-direction: column;
+    }
+    .container-two .right-side-about {
+        flex: none;
+        background-image: url(../images/about-left-side.png);
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        max-width: 100%;
+    }
+    .container-two .right-side-about .about-me{
+        background-color: var(--collor3);
+        opacity: 0.8;
+        align-items:center;
+        padding: 50px;
+    }
+    .container-two .left-side-about {
+        display: none;
+    }
+
+    /* ================================================ */
+    /* =================== PROJECTS =================== */
+    /* ================================================ */
+
+    .container-three .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ================================================ */
+    /* ==================== CONTACT =================== */
+    /* ================================================ */
+
+    .container-four {
+        flex-direction: column;
+    }
+    .container-four .left-side-contact {
+        max-width: 100%;
+        flex: none;
+        background-image: url(../images/contact-right-side.png);
+        background-position: center;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+    }
+    .container-four .text {
+        padding: 0;
+    }
+    .container-four .right-side-contact {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* ================================================ */
+    /* ==================== HEADER ==================== */
+    /* ================================================ */
+    header .menu-complete {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .menu-compact {
+        display: flex;
+        position: inherit;
+    }
+    header .menu-line {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        max-width: 100%;
+    }
+
+    /* ================================================ */
+    /* ===================== HOME ===================== */
+    /* ================================================ */
+    .container-one .left-side-home .info .name{
+        font-size: 35px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-one .left-side-home .info .buttons a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .container-one .left-side-home .info .buttons a:first-child {
+        margin-top: 10px;
+    }
+
+    /* ================================================ */
+    /* =================== ABOUT ME =================== */
+    /* ================================================ */
+
+    .container-two .about-me .title {
+        font-size: 22px;
+    }
+    .container-two .about-me .text p {
+        font-size: 18px;
+    }
+
+    /* ================================================ */
+    /* =================== PROJECTS =================== */
+    /* ================================================ */
+
+    .container-three .title {
+        font-size: 30px;
+    }
+
+    .container-three .projects .box {
+        width: auto;
+        padding: 10px;
+    }
+
+    .container-three .projects .box .img {
+        width: 290px;
+        height: 290px;
+        background-color: var(--collor2);
+    
+    }
+    .container-three .projects .box p {
+        width: 290px;
+    }
+    
+}

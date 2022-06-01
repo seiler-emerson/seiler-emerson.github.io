@@ -230,11 +230,16 @@ header .menu-line {
     margin-bottom: 20px;
 }
 
+.container-three .project-box {
+    height: 525px;
+    width: 1020px;
+    overflow: hidden;
+}
+
 .container-three .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* width: 1240px; */
+    display: flex;
     height: auto;
+    transition: all ease 0.3s;
 }
 
 .container-three .projects .box {
@@ -243,7 +248,6 @@ header .menu-line {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 400px;
     border-radius: 10px;
     margin: 0 5px 0 5px;
     background-color: var(--collor1);
@@ -282,18 +286,6 @@ header .menu-line {
 .container-three a:hover {
     opacity: 0.8;
 }
-.container-three .projects .box .img1 {
-    background-image: url(../images/projects/hiremeFlix.png);
-    background-size: cover;
-}
-.container-three .projects .box .img2 {
-    background-image: url(../images/projects/adsManager.png);
-    background-size: cover;
-}
-.container-three .projects .box .img3 {
-    background-image: url(../images/projects/pomodoro.png);
-    background-size: cover;
-}
 
 .container-three a {
     display: inline-block;
@@ -309,6 +301,28 @@ header .menu-line {
     margin-top: 20px;
 }
 
+.projects-sliders {
+    position: absolute;
+    z-index: 999;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider-control {
+    width: 50px;
+    height: 50px;
+    background-color: var(--collor2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.slider-control img {
+    width: 50px;
+    height: 50px;
+}
     /* ================================================ */
     /* ==================== CONTACT =================== */
     /* ================================================ */
@@ -420,6 +434,13 @@ footer a {
         margin-bottom: 10px;
     }
 
+    .container-three .project-box {
+        width: 680px;
+    }
+    .projects-sliders {
+        width: 800px;
+    }
+
 }
 
 @media (max-width: 920px) {
@@ -489,7 +510,7 @@ footer a {
     .container-three .projects {
         grid-template-columns: repeat(1, 1fr);
     }
-
+    
     /* ================================================ */
     /* ==================== CONTACT =================== */
     /* ================================================ */
@@ -512,6 +533,15 @@ footer a {
     }
     .container-four .right-side-contact {
         display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .container-three .project-box {
+        width: 340px;
+    }
+    .projects-sliders {
+        width: 450px;
     }
 }
 
@@ -579,6 +609,8 @@ footer a {
 
     .container-three .projects .box {
         width: auto;
+        /* padding: 10px; */
+        margin: 0;
         padding: 10px;
     }
 
@@ -591,5 +623,19 @@ footer a {
     .container-three .projects .box p {
         width: 290px;
     }
-    
+
+    .container-three .project-box {
+        width: 310px;
+    }
+    .projects-sliders {
+        width: 310px;
+    }
+    .slider-control {
+        width: 30px;
+        height: 30px;
+    }
+    .slider-control img {
+        width: 30px;
+        height: 30px;
+    }
 }
