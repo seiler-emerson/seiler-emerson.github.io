@@ -234,6 +234,7 @@ header .menu-line {
     height: 525px;
     width: 1020px;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .container-three .projects {
@@ -252,7 +253,7 @@ header .menu-line {
     border-radius: 10px;
     margin: 0 5px 0 5px;
     background-color: var(--collor1);
-    border-radius: 10px;
+    
 }
 .container-three .projects .box h2 {
     font-size: 30px;
