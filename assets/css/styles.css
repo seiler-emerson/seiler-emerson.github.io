@@ -240,6 +240,7 @@ header .menu-line {
     display: flex;
     height: auto;
     transition: all ease 0.3s;
+    border-radius: 10px;
 }
 
 .container-three .projects .box {
