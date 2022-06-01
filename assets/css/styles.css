@@ -240,7 +240,7 @@ header .menu-line {
     display: flex;
     height: auto;
     transition: all ease 0.3s;
-    border-radius: 10px;
+    
 }
 
 .container-three .projects .box {
@@ -252,6 +252,7 @@ header .menu-line {
     border-radius: 10px;
     margin: 0 5px 0 5px;
     background-color: var(--collor1);
+    border-radius: 10px;
 }
 .container-three .projects .box h2 {
     font-size: 30px;
