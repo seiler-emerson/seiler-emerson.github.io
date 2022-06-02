@@ -48,7 +48,7 @@ const projectList = [
         projectLink: "https://seiler-emerson.github.io/border_radius_generator/",
     },
     {
-        title: "Calculadora",
+        title: "Calculator",
         imageName: "calculadora.png",
         description: "This is one of a calculator, where you can perform the four basic operations.",
         repositoryLink: "https://github.com/seiler-emerson/calculadora",
