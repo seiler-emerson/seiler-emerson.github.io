@@ -47,6 +47,20 @@ const projectList = [
         repositoryLink: "https://github.com/seiler-emerson/border_radius_generator",
         projectLink: "https://seiler-emerson.github.io/border_radius_generator/",
     },
+    {
+        title: "Calculadora",
+        imageName: "calculadora.png",
+        description: "This is one of a calculator, where you can perform the four basic operations.",
+        repositoryLink: "https://github.com/seiler-emerson/calculadora",
+        projectLink: "https://seiler-emerson.github.io/calculadora/",
+    },
+    {
+        title: "Floating Browser",
+        imageName: "floatingBrowser.png",
+        description: "This is a floating web browser project, which is always visible no matter what application is open.",
+        repositoryLink: "https://github.com/seiler-emerson/videotoup",
+        projectLink: "https://github.com/seiler-emerson/videotoup",
+    },
 
 ]
 
