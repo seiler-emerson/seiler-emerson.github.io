@@ -135,7 +135,7 @@ function closeMenuCompact() {
 
 let totalProjects = document.querySelectorAll('.box').length;
 let currentProject = 0;
-let actualWidthDisplay;
+let actualWidthDisplay=0;
 
 // WINDOWS WIDTH
 function verifyDisplayWidth() {
