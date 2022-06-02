@@ -423,7 +423,7 @@ footer a {
     /* ================================================ */
     
     .container-three {
-        height: auto;
+        /* height: auto; */
         padding: 30px;
         background-image: url(../images/project_mobile.png);
         background-size: 100% 100%;

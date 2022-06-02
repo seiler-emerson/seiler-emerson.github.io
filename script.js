@@ -12,7 +12,7 @@ function openMenuCompact() {
 }
 
 function closeMenuCompact() {
-    var widthDisplay = window.screen.width;
+    let widthDisplay = window.innerWidth;
     
     if(widthDisplay<600) {
         iconMenuCompact.style.display = "flex";
@@ -27,7 +27,13 @@ function closeMenuCompact() {
 
 let totalProjects = document.querySelectorAll('.box').length;
 // document.querySelector('.projects').style.width = `calc(340px * ${totalProjects})`;
-let actualWidthDisplay = window.screen.width;
+// let actualWidthDisplay = window.screen.width;
+
+let actualWidthDisplay;
+function verifyDisplayWidth() {
+    actualWidthDisplay = window.innerWidth;
+    return actualWidthDisplay;
+}
 
 let currentProject = 0;
 
@@ -79,4 +85,5 @@ function updateMargin() {
     document.querySelector('.projects').style.marginLeft = `-${newMargin}px`;
 }
 
-setInterval(goNext, 2000)
+setInterval(goNext, 3000)
+setInterval(verifyDisplayWidth, 15000)
