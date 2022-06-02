@@ -142,6 +142,7 @@ function verifyDisplayWidth() {
     actualWidthDisplay = window.innerWidth;
     return actualWidthDisplay;
 }
+verifyDisplayWidth();
 
 // PREVIOUS
 function goPrev() {
