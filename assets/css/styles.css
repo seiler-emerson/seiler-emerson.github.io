@@ -631,7 +631,7 @@ footer a {
         width: 310px;
     }
     .projects-sliders {
-        width: 310px;
+        width: 380px;
     }
     .slider-control {
         width: 30px;
@@ -640,5 +640,11 @@ footer a {
     .slider-control img {
         width: 30px;
         height: 30px;
+    }
+}
+
+@media (max-width: 380px) {
+    .projects-sliders {
+        width: 100%;
     }
 }
