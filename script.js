@@ -9,31 +9,43 @@ const projectList = [
         title: "HiremeFlix",
         imageName: "hiremeFlix.png",
         description: "This project aims to expose the interest of classmates in the Entra21-Blusoft program, as well as the companies they would like to work for.",
+        repositoryLink: "https://github.com/seiler-emerson/hiremeflix",
         projectLink: "https://seiler-emerson.github.io/hiremeflix/",
     },
     {
         title: "ADS Manager",
         imageName: "adsManager.png",
         description: "The management system allows the verification of the ads and the projection of the results of the campaign.",
+        repositoryLink: "https://github.com/seiler-emerson/proway_capgemini_2021",
         projectLink: "https://seiler-emerson.github.io/proway_capgemini_2021/",
     },
     {
         title: "Pomodoro",
         imageName: "pomodoro.png",
         description: "Application to help focus during activities that require concentration.",
+        repositoryLink: "https://github.com/seiler-emerson/pomodoro",
         projectLink: "https://seiler-emerson.github.io/pomodoro/",
     },
     {
         title: "Virtual Keyboard",
         imageName: "keyboardPiano.png",
         description: "You can play a piano by using your computer's keyboard.",
+        repositoryLink: "https://github.com/seiler-emerson/keyboard_piano",
         projectLink: "https://seiler-emerson.github.io/keyboard_piano/",
     },
     {
         title: "Retro Painting",
         imageName: "retroPainting.png",
         description: "This is a retro blackboard project, in the style of old cell phones, where you could draw by coloring the pixels.",
+        repositoryLink: "https://github.com/seiler-emerson/retro_painting",
         projectLink: "https://seiler-emerson.github.io/retro_painting/",
+    },
+    {
+        title: "Border Radius",
+        imageName: "borderRadius.png",
+        description: "Border radius generator, where it is possible to perform the simulation of the rounding of the four edges individually.",
+        repositoryLink: "https://github.com/seiler-emerson/border_radius_generator",
+        projectLink: "https://seiler-emerson.github.io/border_radius_generator/",
     },
 
 ]
@@ -57,7 +69,11 @@ const DOMProject = {
         <h2>${index.title}</h2>
         <div class="img" style="background-image: url(./assets/images/projects/${index.imageName}); background-size: cover;"></div>
         <p>${index.description}</p>
-        <a href="${index.projectLink}" target="_blank">Test Here!</a>
+        <div class="buttons-project">
+            <a href="${index.repositoryLink}" target="_blank">Repository</a>
+            <a href="${index.projectLink}" target="_blank">Test Here!</a>
+        </div>
+        
         `
         return html
     },
@@ -162,8 +178,17 @@ function updateMargin() {
     document.querySelector('.projects').style.marginLeft = `-${newMargin}px`;
 }
 
-
-setInterval(goNext, 3000);  // Auto next 3 seconds
+setInterval(goNext, 4000);  // Auto next 3 seconds
 setInterval(verifyDisplayWidth, 15000); //Auto windows width verify 15 seconds
 
+// ====================================================================================== //
+// ===================================== CONSOLE.LOG ==================================== //
+// ====================================================================================== //
 
+function consoleMessage() {
+    console.log("YOU OVER HERE?");
+    console.log("You thought I wouldn't find you right?!");
+    console.log("WHAT ABOUT A COFFEE?");
+    console.log("Click there ==> https://github.com/seiler-emerson");
+}
+consoleMessage();
