@@ -1,7 +1,85 @@
+// ====================================================================================== //
+// ================================ CONSTRUCTOR PROJECTS ================================ //
+// ====================================================================================== //
 
-// ================================================ //
-// ================== MENU MOBILE ================= //
-// ================================================ //
+// ================================    PROJECTS LIST    ================================= //
+
+const projectList = [
+    {
+        title: "HiremeFlix",
+        imageName: "hiremeFlix.png",
+        description: "This project aims to expose the interest of classmates in the Entra21-Blusoft program, as well as the companies they would like to work for.",
+        projectLink: "https://seiler-emerson.github.io/hiremeflix/",
+    },
+    {
+        title: "ADS Manager",
+        imageName: "adsManager.png",
+        description: "The management system allows the verification of the ads and the projection of the results of the campaign.",
+        projectLink: "https://seiler-emerson.github.io/proway_capgemini_2021/",
+    },
+    {
+        title: "Pomodoro",
+        imageName: "pomodoro.png",
+        description: "Application to help focus during activities that require concentration.",
+        projectLink: "https://seiler-emerson.github.io/pomodoro/",
+    },
+    {
+        title: "Virtual Keyboard",
+        imageName: "keyboardPiano.png",
+        description: "You can play a piano by using your computer's keyboard.",
+        projectLink: "https://seiler-emerson.github.io/keyboard_piano/",
+    },
+    {
+        title: "Retro Painting",
+        imageName: "retroPainting.png",
+        description: "This is a retro blackboard project, in the style of old cell phones, where you could draw by coloring the pixels.",
+        projectLink: "https://seiler-emerson.github.io/retro_painting/",
+    },
+
+]
+
+// ========================    CREATION OF PROFILES ON SCREEN    ======================== //
+
+const DOMProject = {
+    projectContainer: document.querySelector(".projects"),
+
+    addProject(index) {  //Responsável por adicionar o projeto no container
+        const projectBox = document.createElement('div');
+        projectBox.classList.add('box');
+        projectBox.innerHTML = DOMProject.innerHTMLProject(index);
+        projectBox.dataset.index = index;
+        DOMProject.projectContainer.appendChild(projectBox);
+    },
+
+    innerHTMLProject(index) {
+
+        const html = `
+        <h2>${index.title}</h2>
+        <div class="img" style="background-image: url(./assets/images/projects/${index.imageName}); background-size: cover;"></div>
+        <p>${index.description}</p>
+        <a href="${index.projectLink}" target="_blank">Test Here!</a>
+        `
+        return html
+    },
+
+}
+
+// ==============================    RUNNING ARRAYLIST    =============================== //
+
+const App = {
+    init() {
+        projectList.sort(function(a,b){
+           return (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0);
+       }).forEach(function(index) {
+        DOMProject.addProject(index);               //Exibe os anuncios na pagina de anuncios 
+        })
+    }
+}
+App.init()
+
+// ====================================================================================== //
+// ===================================== MENU MOBILE ==================================== //
+// ====================================================================================== //
 
 let iconMenuCompact = document.querySelector('.menu-compact');
 let menuOpen = document.querySelector('.menu-complete');
@@ -20,23 +98,22 @@ function closeMenuCompact() {
     }
 }
 
+// ====================================================================================== //
+// ================================== SLIDER PROJECTS =================================== //
+// ====================================================================================== //
 
-// ================================================ //
-// ================ SLIDER PROJECTS =============== //
-// ================================================ //
 
 let totalProjects = document.querySelectorAll('.box').length;
-// document.querySelector('.projects').style.width = `calc(340px * ${totalProjects})`;
-// let actualWidthDisplay = window.screen.width;
-
+let currentProject = 0;
 let actualWidthDisplay;
+
+// WINDOWS WIDTH
 function verifyDisplayWidth() {
     actualWidthDisplay = window.innerWidth;
     return actualWidthDisplay;
 }
 
-let currentProject = 0;
-
+// PREVIOUS
 function goPrev() {
     currentProject--;
     if(actualWidthDisplay <= 800) {
@@ -55,6 +132,7 @@ function goPrev() {
     updateMargin();
 }
 
+// NEXT
 function goNext() {
     currentProject++;
     if(actualWidthDisplay <= 800) {
@@ -73,8 +151,7 @@ function goNext() {
     updateMargin();
 }
 
-
-//480px
+// BOX PROJECTS WIDTH
 function updateMargin() {
     let newMargin = 0;
     if(actualWidthDisplay <= 480) {
@@ -85,5 +162,8 @@ function updateMargin() {
     document.querySelector('.projects').style.marginLeft = `-${newMargin}px`;
 }
 
-setInterval(goNext, 3000)
-setInterval(verifyDisplayWidth, 15000)
+
+setInterval(goNext, 3000);  // Auto next 3 seconds
+setInterval(verifyDisplayWidth, 15000); //Auto windows width verify 15 seconds
+
+
