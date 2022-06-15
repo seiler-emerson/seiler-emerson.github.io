@@ -64,7 +64,7 @@ const projectList = [
     {
         title: "Electronic Medical Record",
         imageName: "emr.png",
-        description: "This is a Electronic Medical Record system.",
+        description: "This is a Electronic Medical Record system developed in java during Entra21.",
         repositoryLink: "https://github.com/seiler-emerson/Entra21_Project_EMR_2022/tree/agil-logica-poo-avancado",
         projectLink: "https://github.com/seiler-emerson/Entra21_Project_EMR_2022/tree/agil-logica-poo-avancado",
     },
