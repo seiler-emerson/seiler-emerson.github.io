@@ -193,7 +193,7 @@ function updateMargin() {
     document.querySelector('.projects').style.marginLeft = `-${newMargin}px`;
 }
 
-//setInterval(goNext, 4000);  // Auto next 3 seconds
+setInterval(goNext, 4000);  // Auto next 4 seconds
 setInterval(verifyDisplayWidth, 15000); //Auto windows width verify 15 seconds
 
 // ====================================================================================== //
