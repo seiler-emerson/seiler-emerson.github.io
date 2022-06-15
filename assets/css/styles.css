@@ -231,7 +231,8 @@ header .menu-line {
 }
 
 .container-three .project-box {
-    height: 525px;
+    height: 60%;
+    max-height: 525px;
     width: 1020px;
     overflow: hidden;
     border-radius: 10px;
@@ -239,12 +240,13 @@ header .menu-line {
 
 .container-three .projects {
     display: flex;
-    height: auto;
+    height: 100%;
     transition: all ease 0.3s;
     
 }
 
 .container-three .projects .box {
+    height: 100%;
     padding: 20px 10px;
     display: flex;
     flex-direction: column;
@@ -256,16 +258,16 @@ header .menu-line {
     
 }
 .container-three .projects .box h2 {
-    font-size: 30px;
+    font-size: 1.5em;
     color: var(--collor0);
     margin-bottom: 10px;
 }
 
 .container-three .projects .box .img {
-    width: 310px;
-    height: 310px;
-    background-color: var(--collor2);
-
+    height: 100%;
+    max-height: 310px;
+    width: 95%;
+    max-width: 310px;
 }
 
 .container-three .projects .box p {

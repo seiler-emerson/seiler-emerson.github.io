@@ -81,7 +81,7 @@ const DOMProject = {
 
         const html = `
         <h2>${index.title}</h2>
-        <div class="img" style="background-image: url(./assets/images/projects/${index.imageName}); background-size: cover;"></div>
+        <div class="img" style="background-image: url(./assets/images/projects/${index.imageName}); background-size: cover; background-position: center;"></div>
         <p>${index.description}</p>
         <div class="buttons-project">
             <a href="${index.repositoryLink}" target="_blank">Repository</a>
@@ -193,7 +193,7 @@ function updateMargin() {
     document.querySelector('.projects').style.marginLeft = `-${newMargin}px`;
 }
 
-setInterval(goNext, 4000);  // Auto next 3 seconds
+//setInterval(goNext, 4000);  // Auto next 3 seconds
 setInterval(verifyDisplayWidth, 15000); //Auto windows width verify 15 seconds
 
 // ====================================================================================== //
