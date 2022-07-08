@@ -181,6 +181,7 @@ svg:hover {
     box-shadow: 0px 0px 10px var(--collor3);
     border-radius: 5px;
     margin-right: 10px;
+    pointer-events: auto;
 }
 
 .container-one .info .buttons a.light {
