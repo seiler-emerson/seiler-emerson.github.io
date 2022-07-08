@@ -142,7 +142,7 @@ svg:hover {
 
 .container-one .info {
     padding-right: 60px;
-
+    pointer-events: none;
     display: flex;
     flex-direction: column;
     align-items:flex-end;
@@ -534,10 +534,6 @@ footer a {
     }
     .container-one .right-side-home {
         max-width: 100%;
-    }
-
-    .container-one .info {
-        pointer-events: none;
     }
 
     .container-one .info .name {
