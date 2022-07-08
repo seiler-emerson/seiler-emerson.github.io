@@ -9,6 +9,8 @@
     --collor3: #010626;
     --collor4: #021859;
     --collor5: #484659; 
+    --collor6: #fff4f4d1;
+    --collor7: #010737;
 }
 
 * {
@@ -107,6 +109,7 @@ header .menu-line {
     align-items: center;
     /* padding-right: 60px; */
     justify-content: end;
+    
 }
 
 .container-one .left-side-home .logo-stack-container {
@@ -127,14 +130,12 @@ header .menu-line {
 svg {
     width: 45px;
     height: 45px;
-    fill: #010737;
-    
-    /* fill: rgb(20, 5, 53); */
+    fill: var(--collor7);
     transform: rotate(335deg);
     margin: 10px;
 }
 svg:hover {
-    filter: drop-shadow(1px 1px 10px rgba(255, 244, 244, 0.818));
+    filter: drop-shadow(1px 1px 10px var(--collor6));
     cursor: pointer;
     
 }
@@ -198,6 +199,7 @@ svg:hover {
     background-image: url('../images/initial_right_side.png');
     background-size: cover;
     background-position: center;
+    border-bottom-left-radius: 32px;
 }
 
 /* ================================================ */
@@ -226,6 +228,7 @@ svg:hover {
     background-size: center;
     background-position: center;
     z-index: 1;
+    border-top-right-radius: 32px;
 }
 
 .container-two .about-me {

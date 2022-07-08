@@ -306,7 +306,7 @@ const DOMStacks = {
     addStack(index) {  //Responsável por adicionar o projeto no container
         const stacksBox = document.createElement('div');
         stacksBox.classList.add('logo-stack');
-        stacksBox.innerHTML = DOMStacks.innerHTMLStacks(index).repeat(caclulateQuant());
+        stacksBox.innerHTML = DOMStacks.innerHTMLStacks(index).repeat(caclulateQuant(stacks));
         stacksBox.dataset.index = index;
         DOMStacks.stacksContainer.appendChild(stacksBox);
     },
@@ -333,16 +333,16 @@ const DOMStacks = {
 }
 
 //CALCULATE QTD ITENS PAGE NEED
-function caclulateQuant() {
+function caclulateQuant(array) {
     let qtd = 0;
     if(verifyDisplayWidth() > 920  ) {
-        qtd =20
+        qtd = (220 / (array.length)).toFixed()
     } else if (verifyDisplayWidth() > 820 ) {
-        qtd =17
+        qtd = (187 / (array.length)).toFixed()
     }  else if (verifyDisplayWidth() > 520 ) {
-        qtd =14
+        qtd = (154 / (array.length)).toFixed()
     } else if (verifyDisplayWidth() <= 520 ) {
-        qtd = 9
+        qtd = (99 / (array.length)).toFixed()
     }
     return qtd
 }
