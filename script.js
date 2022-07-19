@@ -370,6 +370,31 @@ function consoleMessage() {
     console.log("You thought I wouldn't find you right?!");
     console.log("WHAT ABOUT A COFFEE?");
     console.log("Click there ==> https://github.com/seiler-emerson");
+
+
+    // let estilo = [
+    //     'background-color:#fff',
+    //     'background-image: url(house.png)',
+    //     'background-repeat: no-repeat',
+    //     'background-size:cover',
+    //     'color:#fff',
+    //     'padding:80px 100px',
+    //     'line-height:35px',
+    //     'width:80px',
+    //     'height:180px',
+    //     'border:1px solid black',
+    //     'border-radius:8px'
+    //   ];
+      
+    //   console.log('%c ', estilo.join(';'));
+    // console.log('%c Meu Texto','color: white; background-color: red;');
+
+    // console.log('%c','padding: 40px 45px;line-height:100px;background-image:url("house.png") no-repeat;background-size: cover;');
+
+    // const style = 'background: url(house.png); background-repeat: no-repeat; background-attachment: inherit; background-position: inherit; background-size: cover;font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113)';
+
+    // console.log('%c ', style);
+
 }
 consoleMessage();
 
@@ -378,3 +403,4 @@ function visitProfile() {
         window.open('https://github.com/seiler-emerson','_blank');
     }
 }
+
