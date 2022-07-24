@@ -68,7 +68,13 @@ const projectList = [
         repositoryLink: "https://github.com/seiler-emerson/Entra21_Project_EMR_2022/tree/agil-logica-poo-avancado",
         projectLink: "https://github.com/seiler-emerson/Entra21_Project_EMR_2022/tree/agil-logica-poo-avancado",
     },
-
+    {
+        title: "Inside Medical Website",
+        imageName: "inside_medical.png",
+        description: "This is a website for the presentation of the company Inside Medical.",
+        repositoryLink: "https://github.com/seiler-emerson/initial_projects/tree/main/inside_medical",
+        projectLink: "https://seiler-emerson.github.io/initial_projects/inside_medical/index.html",
+    },
 
 ]
 
@@ -282,7 +288,7 @@ const stacks = [
     },
     {   //TS
         svg: `
-        <svg width="215" height="215" viewBox="0 0 215 215" xmlns="http://www.w3.org/2000/svg" onclick="alert('Prevenir é melhor do que remediar, bora tipar tudo!')">
+        <svg width="215" height="215" viewBox="0 0 215 215" xmlns="http://www.w3.org/2000/svg" onclick="alert('Prevention is better than cure, let's type everything!')">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.47715 0 0 4.47716 0 10V205C0 210.523 4.47716 215 10 215H205C210.523 215 215 210.523 215 205V10C215 4.47715 210.523 0 205 0H10ZM182.628 98.6435C186.491 100.659 195 109.151 195 110.991C195 111.447 191.686 114.056 187.636 116.789L180.273 121.758L176.931 118.31C169.31 110.446 158 112.492 158 121.733C158 126.781 160.979 129.401 173 134.926C195.199 145.129 200.885 151.735 200.934 167.381C200.969 178.66 196.428 186.319 186.835 191.16C169.192 200.063 141.578 193.511 133.497 178.506L133.352 178.238C132.617 176.877 132.142 175.998 132.257 175.203C132.464 173.756 134.628 172.589 140.735 169.294L141.397 168.937L147.695 165.538L151.522 169.774C156.478 175.259 160.009 177.011 166.411 177.161C175.933 177.384 181.971 172.576 180.512 165.934C179.588 161.73 176.665 159.572 163.573 153.429C143.388 143.957 137.852 137.421 137.792 122.99C137.741 110.718 141.939 103.76 152.457 98.6845C158.124 95.9505 159.123 95.7905 168.5 96.1295C176.3 96.4105 179.408 96.9635 182.628 98.6435ZM126 105.881V114.881H112H98V154.381V193.881H88H78V154.381V114.881H64H50V105.881V96.8815H88H126V105.881Z" />
         </svg>
         `
