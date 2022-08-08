@@ -75,6 +75,13 @@ const projectList = [
         repositoryLink: "https://github.com/seiler-emerson/initial_projects/tree/main/inside_medical",
         projectLink: "https://seiler-emerson.github.io/initial_projects/inside_medical/index.html",
     },
+    {
+        title: "Pokémon Capture",
+        imageName: "pokemonCapture.png",
+        description: "This is an application that consumes the PokéApi API.",
+        repositoryLink: "https://github.com/seiler-emerson/initial_projects/tree/main/pokemonCapture",
+        projectLink: "▶️",
+    },
 
 ]
 
