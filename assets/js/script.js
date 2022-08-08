@@ -80,7 +80,7 @@ const projectList = [
         imageName: "pokemonCapture.png",
         description: "This is an application that consumes the PokéApi API.",
         repositoryLink: "https://github.com/seiler-emerson/initial_projects/tree/main/pokemonCapture",
-        projectLink: "▶️",
+        projectLink: "https://seiler-emerson.github.io/initial_projects/pokemonCapture/",
     },
 
 ]
