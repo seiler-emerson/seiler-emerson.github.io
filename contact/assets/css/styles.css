@@ -255,33 +255,6 @@ svg:hover {
     text-align: justify;
 }
 
-    /* ================================================ */
-    /* =================== PROJECTS =================== */
-    /* ================================================ */
-
-.container-three {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/project.png);
-    background-size: 100%;
-    background-position: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    z-index: 1;
-}
-
-.container-three .title {
-    font-size: 50px;
-    font-weight: bold;
-    color: var(--collor0);
-    margin-bottom: 20px;
-}
-
-
-
-
 
     /* ================================================ */
     /* ==================== CONTACT =================== */
@@ -375,31 +348,6 @@ footer a {
 
 @media (max-width: 1250px) {
 
-    /* ================================================ */
-    /* =================== PROJECTS =================== */
-    /* ================================================ */
-    
-    .container-three {
-        /* height: auto; */
-        padding: 30px;
-        background-image: url(../images/project_mobile.png);
-        background-size: 100% 100%;
-    }
-
-    .container-three .projects {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .container-three .projects .box {
-        margin-bottom: 10px;
-    }
-
-    .container-three .project-box {
-        width: 680px;
-    }
-    .projects-sliders {
-        width: 800px;
-    }
 
     .container-two .about-me  {
         padding: 50px;
@@ -494,13 +442,7 @@ footer a {
        
     }
 
-    /* ================================================ */
-    /* =================== PROJECTS =================== */
-    /* ================================================ */
 
-    .container-three .projects {
-        grid-template-columns: repeat(1, 1fr);
-    }
     
     /* ================================================ */
     /* ==================== CONTACT =================== */
@@ -528,12 +470,7 @@ footer a {
 }
 
 @media (max-width: 800px) {
-    .container-three .project-box {
-        width: 340px;
-    }
-    .projects-sliders {
-        width: 450px;
-    }
+
     .container-one .left-side-home .logo-stack {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
@@ -561,13 +498,7 @@ footer a {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
-    /* ================================================ */
-    /* =================== PROJECTS =================== */
-    /* ================================================ */
 
-    .container-three {
-        height: auto;
-    }
 }
 
 @media (max-width: 480px) {
@@ -610,51 +541,10 @@ footer a {
         font-size: 18px;
     }
 
-    /* ================================================ */
-    /* =================== PROJECTS =================== */
-    /* ================================================ */
-
-    .container-three .title {
-        font-size: 30px;
-    }
-
-    .container-three .projects .box {
-        width: auto;
-        /* padding: 10px; */
-        margin: 0;
-        padding: 10px;
-    }
-
-    .container-three .projects .box .img {
-        width: 290px;
-        height: 290px;
-        background-color: var(--collor2);
-    
-    }
-    .container-three .projects .box p {
-        width: 290px;
-    }
-
-    .container-three .project-box {
-        width: 310px;
-    }
-    .projects-sliders {
-        width: 380px;
-    }
-    .slider-control {
-        width: 30px;
-        height: 30px;
-    }
-    .slider-control img {
-        width: 30px;
-        height: 30px;
-    }
 }
 
 @media (max-width: 380px) {
-    .projects-sliders {
-        width: 100%;
-    }
+
 
     .container-one .left-side-home .logo-stack {
         grid-template-columns: 1fr 1fr 1fr 1fr;
