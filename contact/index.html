@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./assets/images/icons/favicon.png">
     <title>Emerson Seiler</title>
+    <!-- whats icon -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
@@ -18,8 +20,7 @@
         <div class="menu">
             <div class="menu-complete">
                 <a href="#home">HOME</a>
-                <a href="#about">ABOUT</a>
-                <a href="#projects">PROJECTS</a>
+                <a href="#emr">EMR</a>
                 <a href="#contact">CONTACT</a>
             </div>
             <div class="menu-compact" onclick="openMenuCompact()">
@@ -42,7 +43,7 @@
                 <div class="profession">Java Jr Developer</div>
                 <div class="name"><h1>I'm Emerson</h1><h1>&nbspSeiler</h1></div>
                 <div class="buttons">
-                    <a href="#about">More About Me</a>
+                    <a href="https://seiler-emerson.github.io/" target="_blank">Portfólio</a>
                     <a href="#contact" class="light">Contact Me!</a>
                 </div>
             </div>
@@ -50,55 +51,28 @@
         <div class="right-side-home"></div>
     </section>
 
-    <a name="about"></a>
+    <a name="emr"></a>
     <section class="container-two" onclick="closeMenuCompact()">
-        <div class="left-side-about"></div>
+        <div class="left-side-about">
+            <video controls src="./assets/video/electronic_medical_record.mp4"></video>
+        </div>
         <div class="right-side-about">
             <div class="about-me">
-                <div class="title">More about me</div>
+                <div class="title">Electronic Medical Record - EMR</div>
                 <div class="text">
                     <p>
-                        I have a bachelor's degree in Mechanical Engineering and a postgraduate degree in Biomedical Engineering with an emphasis on Clinical Engineering.
+                        The EMR is an electronic medical record system that aims to deal with the management of small clinics and medical care offices.
                         <br>
-                        I am a passionate maker who is always willing to learn and work with technology and different things.
+                        Focused on the management of electronic medical records, it is able to store and manage information related to patients during the service cycles.
                         <br>
-                        I love exploring new technologies, I also love teaching.
+                        With the history, it is possible for the health professional to know the personalities of the patient's framework and thus make better decisions.
                         <br>
-                        My hobbies usually involve computer, 3D printer and my mountain bike.
-                        <br>
-                        I am currently studying Java/Angular/Database in the program Entra21/Blusoft.
-                        <br>
-                        Looking for an opportunity in the technology field.
+                        Another important point is related to the issue of printed documentation, thus eliminating the possibility of errors caused by handwriting interpretation problems.
+                        
                     </p>
                 </div>
             </div>
         </div>
-    </section>
-
-    <a name="projects"></a>
-    <section class="container-three" onclick="closeMenuCompact()">
-        <div class="title">MY PROJECTS</div>
-        <div class="projects-sliders">
-            <div class="slider-control" onclick="goPrev()"><img src="./assets/images/icons/prev.png" alt="Icon Next"></div>
-            <div class="slider-control" onclick="goNext()"><img src="./assets/images/icons/next.png" alt="Icon Prev"></div>
-        </div>
-        <div class="project-box"> 
-            <div class="projects" >
-                <!-- 
-                    <div class="box">
-                        <h2>HiremeFlix</h2>
-                        <div class="img" style="background-image: url(./assets/images/projects/hiremeFlix.png); background-size: cover;"></div>
-                        <p>This project aims to expose the interest of classmates in the Entra21-Blusoft program, as well as the companies they would like to work for.</p>
-                        <div class="buttons-project">
-                            <a href="https://seiler-emerson.github.io/hiremeflix/" target="_blank">Repository</a>
-                            <a href="https://seiler-emerson.github.io/hiremeflix/" target="_blank">Test Here!</a>
-                        </div>
-                    </div>
-                
-                -->
-            </div> 
-        </div>
-        <a href="https://github.com/seiler-emerson" target="_blank">MORE PROJECTS</a>
     </section>
 
     <a name="contact"></a>
@@ -115,6 +89,12 @@
             </div>
         </div>
         <div class="right-side-contact"></div>
+    </section>
+
+    <section>
+        <a href="https://api.whatsapp.com/send/?phone=5547992678503&text=Ol%C3%A1%21+Emerson!+&type=phone_number&app_absent=0" class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
     </section>
 
     <footer>
