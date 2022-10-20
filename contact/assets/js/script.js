@@ -1,45 +1,7 @@
 
-// ========================    CREATION OF PROFILES ON SCREEN    ======================== //
 
-const DOMProject = {
-    projectContainer: document.querySelector(".projects"),
 
-    addProject(index) {  //Responsável por adicionar o projeto no container
-        const projectBox = document.createElement('div');
-        projectBox.classList.add('box');
-        projectBox.innerHTML = DOMProject.innerHTMLProject(index);
-        projectBox.dataset.index = index;
-        DOMProject.projectContainer.appendChild(projectBox);
-    },
 
-    innerHTMLProject(index) {
-
-        const html = `
-        <h2>${index.title}</h2>
-        <div class="img" style="background-image: url(./assets/images/projects/${index.imageName}); background-size: cover; background-position: center;"></div>
-        <p>${index.description}</p>
-        <div class="buttons-project">
-            <a href="${index.repositoryLink}" target="_blank">Repository</a>
-            <a href="${index.projectLink}" target="_blank">Test Here!</a>
-        </div>        
-        `
-        return html
-    },
-
-}
-
-// ===============================    RUNNING ARRAYLIST    =============================== //
-
-const App = {
-    init() {
-        projectList.sort(function(a,b){
-           return (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0);
-       }).forEach(function(index) {
-        DOMProject.addProject(index);               //Exibe os anuncios na pagina de anuncios 
-        })
-    }
-}
-App.init()
 
 // ====================================================================================== //
 // ===================================== MENU MOBILE ==================================== //
