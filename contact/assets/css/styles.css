@@ -225,7 +225,7 @@ svg:hover {
 .container-two .left-side-about {
     flex: 1;
     max-width: 50%;
-    background-image: url('../images/about-left-side.png');
+    background-image: url('../images/emr-background.png');
     background-size: center;
     background-position: center;
     z-index: 1;
