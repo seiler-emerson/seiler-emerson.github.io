@@ -40,13 +40,13 @@ const projectList = [
         repositoryLink: "https://github.com/seiler-emerson/initial_projects/tree/main/retro_painting",
         projectLink: "https://seiler-emerson.github.io/initial_projects/retro_painting/",
     },
-    {
-        title: "Border Radius",
-        imageName: "borderRadius.png",
-        description: "Border radius generator, where it is possible to perform the simulation of the rounding of the four edges individually.",
-        repositoryLink: "https://github.com/seiler-emerson/initial_projects/tree/main/border_radius_generator",
-        projectLink: "https://seiler-emerson.github.io/initial_projects/border_radius_generator/",
-    },
+    // {
+    //     title: "Border Radius",
+    //     imageName: "borderRadius.png",
+    //     description: "Border radius generator, where it is possible to perform the simulation of the rounding of the four edges individually.",
+    //     repositoryLink: "https://github.com/seiler-emerson/initial_projects/tree/main/border_radius_generator",
+    //     projectLink: "https://seiler-emerson.github.io/initial_projects/border_radius_generator/",
+    // },
     {
         title: "Calculator",
         imageName: "calculadora.png",
@@ -65,8 +65,8 @@ const projectList = [
         title: "Electronic Medical Record",
         imageName: "emr.png",
         description: "This is a Electronic Medical Record system developed in java during Entra21.",
-        repositoryLink: "https://github.com/seiler-emerson/Entra21_Project_EMR_2022/tree/agil-logica-poo-avancado",
-        projectLink: "https://github.com/seiler-emerson/Entra21_Project_EMR_2022/tree/agil-logica-poo-avancado",
+        repositoryLink: "https://github.com/Red-Team-Entra21-Java/Entra21_Project_EMR_Angular_2022",
+        projectLink: "https://github.com/Red-Team-Entra21-Java/Entra21_Project_EMR_Angular_2022",
     },
     {
         title: "Inside Medical Website",
